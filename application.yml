@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+#TODO: figure out why I need this here and in bootstrap.yml
+spring:
+  application:
+    name: buttons
+
+ribbon:
+  ServerListRefreshInterval: 1000
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+    
+oracle:
+  username: galactica
+  password: galactica
+  url: jdbc:oracle:thin:@vm-204-oradb-vsm.mdi.ru:1521/VSM
+
+global:
+  layout: 0
